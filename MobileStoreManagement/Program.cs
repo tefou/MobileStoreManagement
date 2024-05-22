@@ -1,11 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using MobileStoreManagement.model;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Manage manage = new Manage();
+        Store store = new Store();
 
         while (true)
         {
@@ -30,22 +30,22 @@ class Program
             switch (option)
             {
                 case 1:
-                    manage.AddMobilePhone();
+                    store.AddMobilePhone();
                     break;
                 case 2:
-                    manage.RemoveMobilePhone();
+                    store.RemoveMobilePhone();
                     break;
                 case 3:
-                    manage.DisplayAllMobilePhones();
+                    store.DisplayAllMobilePhones();
                     break;
                 case 4:
-                    manage.MakePurchase();
+                    store.MakePurchase();
                     break;
                 case 5:
-                    manage.DisplayAllPurchases();
+                    store.DisplayAllPurchases();
                     break;
                 case 6:
-                    manage.SearchMobilePhoneById();
+                    store.SearchMobilePhoneById();
                     break;
                 case 0:
                     return;
